@@ -2,7 +2,7 @@ README File
 Danielle DiTomasso
 Lab 1 
 
-	For this lab, I first started to work on my personal resume page. I decided
+For this lab, I first started to work on my personal resume page. I decided
 what headers I wanted my file to contain, what information I wanted to 
 include, and how I wanted the layout to be. Once I had come up with all of 
 the ideas, I then started to work on the stylesheet, which would make 
@@ -10,7 +10,7 @@ my page look much more presentable. I used my Intro Into ITWS work as
 a refrence, due to the fact that the Intro course is the only background I 
 have, and being I took the class in the fall 2020 semester, I needed a 
 little bit of a refresher. 
-	I believe the hardest thing for me this lab 
+I believe the hardest thing for me this lab 
 was figuring out the Microformats piece, and how to also navigate Github.
 I had never heard of Microformats before, so that required a little bit of 
 research in order to figure out what the purpose of Microformats are, 
