@@ -1,0 +1,33 @@
+Danielle DiTomasso
+Lab 2 README
+
+For this lab, I first started writing the proper HTML tags and headers for 
+the full, un annotated versions of Article 1 and Article 2. From there,
+I completed a summary and annotation of the text, using those same tags and 
+headers. Then, I created the basic CSS and backgound imaging for the sheets,
+and created the text imaging, aligment, and the bold text options for headers 
+h1 and h2. Once I did this, I had to incorporate the JS my group prepare with 
+my article, and I added youtube videos for articles one and two as an extra
+annotation addition. 
+
+After this was completed, I then had to figure out how create a branch in Github,
+instead of committing directly to main. After this was completed, I then created
+a pull request, which merges the work to the main branch, which was something
+I learned during this lab. With the help of Dr. Callahan through discord, I 
+then included my group project partners for a peer review of my work, which after,
+that was completed, ten offically added my work to the main branch. 
+
+One thing I definetly struggled with in this lab however, was the utilization of 
+google fonts. I know most are aware of how to use google fonts in my class, however
+it is something i have always struggled to implement, and this lab was know different. 
+Ulitmatley I couldnt get the google font to appear, however I left my code
+in my two dcuements so I can look back and try and figure out what I did wrong.
+Additonally, I also plan on attending office hours next week in order to figure 
+out exactly why my google font implementation wasn't successful, and how to better 
+improve my CSS pages. 
+
+Resources I used: 
+https://www.w3schools.com/html/html_css.asp
+https://www.w3schools.com/Css/css_font.asp
+https://www.w3schools.com/Css/css_font_google.asp
+https://fonts.google.com/
