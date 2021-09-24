@@ -1,0 +1,69 @@
+body {
+    font-family: 'Bonheur Royale', cursive, sans-serif;
+    background-image: url("background_image.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 35px;
+}
+h2 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 23px;
+}
+
+p.main{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+a{
+    color: black;
+}
+
+.cbox {
+    position: sticky;
+    top: 0px;
+    margin: auto;
+    width: 75%;
+    height:100%;
+    
+    background-color: rgba(245, 245, 245,0.8);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+hr.top{
+    border-top: 1px solid black;
+}
+
+
+#fixedbuttonR {
+    width: 120px;  
+    height: auto;  
+    position: fixed;
+    bottom: 40%;
+    right: 20px; 
+}
+#fixedbuttonL {
+    width: 120px;  
+    height: auto;  
+    position: fixed;
+    bottom: 40%;
+    left: 20px; 
+}
+
