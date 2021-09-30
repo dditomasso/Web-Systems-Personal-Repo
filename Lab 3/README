@@ -1,0 +1,84 @@
+Danielle DiTomasso
+Lab 3 README
+
+Process: 
+
+For this lab, I first started off by planning what I wanted the layout of 
+the webiste to be. I decided that having seperate HTML pages for the 
+different topics (Programs, Undergrad Major, Undergrad Minor, Grad Program,
+News, Faculty, and Contact) would be best, this way everything could be 
+neat, organized, and easy to access. From there, I began to transfer 
+the infromation form the website (text and images) into each of their
+respective pages, using HTML tagging. I utilized the <p>, <li>, <div class>
+<ul id>, <h> tags, and many more throughout my website, this way the process 
+of creating my CSS file would be easier. After this was completed, I then 
+began to work on the menu for my website. I wanted a menu that was 
+consistent and easy to access for all of the pages, this way the user would
+have easy access and naviagtion of the site. I decided that also blocking
+the menu options with two solid black lines would make the menu bar easier
+to find. I then included all of the page names, which were linked to their
+respective HTML pages. 
+
+From there, I then decided to work on the footer of my website. I eventually
+came to the conclusion that the best thing to put in the footer of the 
+website was a link to all of the social medias ITWS has to offer. This makes
+it easy for the user to find, and allows the user to explore the ITWS 
+program at RPI, after they have read all of the information on the website.
+After a bit of research, I managed to figure out how to make the footer
+"stick" to the bottom of the page, since in the beginning the footer
+would float up to wherever the body text ended on the page.
+
+Once this was completed and transferred to every page, I then decided to 
+work on the CSS of the website. I started off by setting up 
+the font family and text size for the body text, and then moved onto
+all the different header tags. Each header tag has the font set to bold, and
+as the heading numbers increase, the size of the text decreases, which gives 
+orginzation to the content on each page. From there, I then created 
+a buch of different classes and id's for each specific page, this way
+I could change certian features. An example of this would text alignment, 
+in which I can change the alignment for one page without doing it for the 
+enitrety of the website. Additonally, I also created a class specific to any 
+lists, in which padding was added in order to indent the bullet point more so 
+then the body text, which looks more professional. 
+
+Creativity:
+
+For this lab, I included a few CSS features to give the user an overall 
+smoother and better expirence. One of these features was "fixing" the 
+bacground image into place. Before having added this feature, the 
+background picture would move with the text when scrolling 
+in the window. If the window was too large for the photo
+(which it was for some pages with more text) the image 
+would get cut off and repeat, which would create a line 
+that cut thorugh the image. In order to fix this, I used 
+"background-repeat" and set it to "no repeat","background-attachment" and 
+set it to "fixed", and "background-size" and set it to "cover."
+
+Another feature I utlilized for creativity was "flex." Flex came in 
+handy often, when it came to placing objects evenly on the window screen. 
+For example, on the "Programs" page, I included 3 photos that can be 
+found on the current RPI ITWS website. However, they appeared vertically
+without any addition of CSS. In order to fix this problem, i created two 
+classes called row and column, and then set the flex value to a thrid of the 
+screen (33.3%), and added a padding of 5px. This allowed the photos to appear
+horizontally on the page. 
+
+Laslty, for the "Contact Us" page, I decided to create an H-card for the ITWS
+address, and a form for the user to submit any questions they may have. 
+However, The H-Card and the Submission form once again appeared vertically 
+and not horizontally. to fix this, I used "flex" again and created a class 
+called container. This class allowed me to align the items within the 
+containers, add padding, and justify the items to whatever side of the 
+screen I wanted. Overall, this made the page look much more seamless and 
+profesisonal.
+
+
+Resources Used:
+https://www.quackit.com/html/tutorial/html_links.cfm#:~:text=HTML%20Links%3A%20How%20to%20create%20Links%20to%20other,links%20on%20the%20page%20to%20start%20with.%20
+https://www.poftut.com/how-to-change-font-color-with-css-in-html/#:~:text=Change%20Font%20Color%20with%20External%20CSS.%20Another%20way,color%20to%20the%20red.%20p%20%7B%20color%3Ared%3B%20%7D
+https://www.w3schools.com/htmL/tryit.asp?filename=tryhtml_images_background7
+https://css-tricks.com/couple-takes-sticky-footer/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side2
+https://www.w3schools.com/csSref/tryit.asp?filename=trycss_text-indent
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html
