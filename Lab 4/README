@@ -1,0 +1,47 @@
+Danielle DiTomasso
+README Lab 4
+
+
+Starting off for lab 4, my group had completed the index page and a large 
+portion of the CSS file. Therefore, I worked on the activities page of the 
+website. The first thing I did for the activities page was inlcude the html 
+body text, and divided up everything in the corresponding tags. After this, 
+I refrenced the CSS and tried to intergrate the existing classes and tags,
+so this way the site would be more consisent and flowing. (NOTE: The activties 
+page in my personal folder no longer corresponds with the CSS file, due to the 
+fact that sigifincant changes were made. However this HTML version was the version
+that I completed for the website). 
+
+After this was done, I then added images to the side of the page that corresponded
+with the text that was on the page (either the Company Expose section, the 
+Tuturing section, or the newsletter section). I wanted the images to look 
+professional, so I made sure they floated to the left of the screen (while the 
+text was on the right in the window) and made sure the margin on each photo was 
+even and equal with all the others. I then researched and added how to create a 
+shadow-effect around each image to make the page look less dull. In order to 
+accomplish this, I created a few new classes within the CSS that included things 
+like margin numbers, shadow-box, size, and other important features that 
+made the shadow work. I also added a few new classes to the CSS that took care 
+of padding, floats, text size and coloring, to make sure that everything matched 
+the index page, but also worked for the indivdiual activties page. Lastly for the 
+activties page, I added a few "bars" across the screen that divided each section,
+this way it would be easier for the user to read each section. 
+
+For the JSON file I created, I thought a good idea might be to create a file 
+for the company expose information, which included the year, and all of the companies 
+attending. This way, in furture years, the information could be added to this 
+file, and I would create almost a running log. I included all of the companies 
+in a list [] within the file, and also had a "year" tag at the top that recorded 
+this year, which is 2021.
+
+I believe the most difficult part of this lab for me personally, was trying to 
+build the acitvities page with already existing CSS. This required me to 
+read thorugh all of my group's code, and try to understand many of their features
+that were beyond my current understanding / knowledge of CSS and HTML. It took a 
+long while for me to "replicate" my page to fit the CSS at the time, and so that 
+some of my text wouldn't look skewed on the page, which was an error I was running 
+into for a long time while I was coding. 
+
+Resources:
+https://www.w3schools.com/CSSref/css3_pr_box-shadow.asp
+https://www.w3schools.com/w3css/w3css_containers.asp
