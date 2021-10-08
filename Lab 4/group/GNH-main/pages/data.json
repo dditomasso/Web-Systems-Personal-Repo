@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "activity": "Company Expose",
+            "description": "The Company Expose is the largest event Gamma Nu Eta hosts each year. It is a casual networking event. You get to know the recruiters before the career fair through fun, interactive activities in small groups. This year we have a few companies attending that won’t be present at the career fair, so it is another valuable way to network in our increasingly virtual world."
+        },
+        {
+            "activity": "Tutoring",
+            "description": "Gamma Nu Eta offers tutoring sessions that take place on Wednesdays, from 1pm to 2pm. Gamma Nu Eta can help you with any course in your ITWS degree program. This includes ITWS core classes, such as Intro to ITWS and Web Systems, or classes outside of ITWS, such as Computer Science 1 and Data Structures. We can also help with any questions that you might have about career development, resumes, as well as just general questions about RPI." 
+        }
+    ]
+}
