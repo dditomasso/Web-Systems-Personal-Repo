@@ -348,117 +348,55 @@ class rad_to_deg extends Operation{
 
 <!doctype html>
 <html>
-<head>
-<title>PHP Calculator</title>
-<style>
-  /* Basic CSS for the docuement */
-  /* Sets the background image and basic font size for the calculator page. */
-  body{
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: large;
-  }
-  /* Sets styling for the "Calculator" heading */
-  h1{
-    font-size: 100px;
-    text-align: center;
-  }
-  /* Creates button styling and hover effect with all of the operations */
-  .div1 {
-    width: 300px;
-    height: 100px;
-    border: 1px solid blue;
-  }
-  .button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white; 
-    color: black; 
-    border: 2px solid #8db3e2;
-  }
-
-  .button:hover {
-    background-color: #8db3e2;
-    color: white;
-  }
-  /* Creates a container for the buttons, which allows them to be equally 
-  distrubuted on the screen */
-  .button-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-  }
-  /* Creates a container for the input boxes and output text, which allows them 
-  to be equally distrubuted on the screen */
-  .input-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-    align-content: center;
-  }
-  #result{
-    font-size: 25px;
-  }
-}
-</style>
-</head>
-<body>
-  <h1> Calculator </h1>
-  <form method="post" action="calculator.php">
-    <div class="input-container">
-      <input type="text" name="op1" id="name" size="25px" placeholder="Enter a number for 'x' here." value="" />
-      <input type="text" name="op2" id="name" size="25px" placeholder="Enter a number for 'n' here." value="" />
-      <pre id="result">
-        <?php 
-          if (isset($op)) {
-            try {
-              echo $op->getEquation();
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>PHP Calculator</title>
+  </head>
+  <body>
+    <h1> Calculator </h1>
+    <form method="post" type="text/css" action="calculator.php">
+      <div class="input-container">
+        <input type="text" name="op1" id="name" size="25px" placeholder="Enter a number for 'x' here." value="" />
+        <input type="text" name="op2" id="name" size="25px" placeholder="Enter a number for 'n' here." value="" />
+        <pre id="result">
+          <?php 
+            if (isset($op)) {
+              try {
+                echo $op->getEquation();
+              }
+              catch (Exception $e) { 
+                $err[] = $e->getMessage();
+              }
             }
-            catch (Exception $e) { 
-              $err[] = $e->getMessage();
-            }
-          }
 
-          foreach($err as $error) {
-              echo $error . "\n";
-          } 
-        ?>
-      </pre>
-    </div>
-    <br/>
-    <br>
-    <!-- Only one of these will be set with their respective value at a time -->
-    <div class="button-container">
-      <input class="button" type="submit" name="add" value="Add" />  
-      <input class="button" type="submit" name="sub" value="Subtract" />  
-      <input class="button" type="submit" name="mult" value="Multiply" />  
-      <input class="button" type="submit" name="divi" value="Divide" />  
-      <input class="button" type="submit" name="x*π" value="x*π" />
-      <input class="button" type="submit" name="sqrt" value="√(x)" /> 
-      <input class="button" type="submit" name="squ" value="x²" />
-      <input class="button" type="submit" name="x^y" value="xⁿ" />  
-      <input class="button" type="submit" name="10^x" value="10˟" />
-      <input class="button" type="submit" name="e^x" value="eˣ" />
-      <input class="button" type="submit" name="log" value="Log(10)" /> 
-      <input class="button" type="submit" name="ln" value="Ln(x)" />  
-      <input class="button" type="submit" name="sin" value="Sin(x)" /> 
-      <input class="button" type="submit" name="cos" value="Cos(x)" /> 
-      <input class="button" type="submit" name="tan" value="Tan(x)" />  
-      <input class="button" type="submit" name="rad2deg" value="Radians -> Degrees" />
-    </div>
-  </form>
-</body>
+            foreach($err as $error) {
+                echo $error . "\n";
+            } 
+          ?>
+        </pre>
+      </div>
+      <br/>
+      <br>
+      <!-- Only one of these will be set with their respective value at a time -->
+      <div class="button-container">
+        <input class="button" type="submit" name="add" value="Add" />  
+        <input class="button" type="submit" name="sub" value="Subtract" />  
+        <input class="button" type="submit" name="mult" value="Multiply" />  
+        <input class="button" type="submit" name="divi" value="Divide" />  
+        <input class="button" type="submit" name="x*π" value="x*π" />
+        <input class="button" type="submit" name="sqrt" value="√(x)" /> 
+        <input class="button" type="submit" name="squ" value="x²" />
+        <input class="button" type="submit" name="x^y" value="xⁿ" />  
+        <input class="button" type="submit" name="10^x" value="10˟" />
+        <input class="button" type="submit" name="e^x" value="eˣ" />
+        <input class="button" type="submit" name="log" value="Log(10)" /> 
+        <input class="button" type="submit" name="ln" value="Ln(x)" />  
+        <input class="button" type="submit" name="sin" value="Sin(x)" /> 
+        <input class="button" type="submit" name="cos" value="Cos(x)" /> 
+        <input class="button" type="submit" name="tan" value="Tan(x)" />  
+        <input class="button" type="submit" name="rad2deg" value="Radians -> Degrees" />
+      </div>
+    </form>
+  </body>
 </html>
 
