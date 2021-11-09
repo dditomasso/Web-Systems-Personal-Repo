@@ -1,0 +1,58 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: large;
+}
+/* Sets styling for the "Calculator" heading */
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+/* Creates button styling and hover effect with all of the operations */
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8db3e2;
+}
+
+.button:hover {
+    background-color: #8db3e2;
+    color: white;
+}
+/* Creates a container for the buttons, which allows them to be equally 
+distrubuted on the screen */
+.button-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+/* Creates a container for the input boxes and output text, which allows them 
+to be equally distrubuted on the screen */
+.input-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    align-content: center;
+}
+#result{
+    font-size: 25px;
+}
