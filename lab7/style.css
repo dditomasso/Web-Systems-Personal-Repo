@@ -1,0 +1,18 @@
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: large;
+}
+/* Sets styling for the "Calculator" heading */
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+/* Creates button styling and hover effect with all of the operations */
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}

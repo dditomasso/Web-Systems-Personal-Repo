@@ -1,0 +1,164 @@
+Lab7_database_dump:
+
+-- phpMyAdmin SQL Dump
+-- version 5.0.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 16, 2021 at 04:41 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `websyslab7`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `courses`
+--
+
+CREATE TABLE `courses` (
+  `crn` int(11) NOT NULL,
+  `prefix` varchar(4) NOT NULL,
+  `number` smallint(4) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `section` int(2) NOT NULL,
+  `year` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- RELATIONSHIPS FOR TABLE `courses`:
+--
+
+--
+-- Dumping data for table `courses`
+--
+
+INSERT INTO `courses` (`crn`, `prefix`, `number`, `title`, `section`, `year`) VALUES
+(60373, 'CSCI', 1200, 'Data Structures', 3, 2022),
+(62827, 'PHIL', 2140, 'Introduction To Logic', 1, 2022),
+(63670, 'ITWS', 2210, 'Introduction To Hci', 1, 2022),
+(63861, 'ARTS', 1030, ' Digital Filmmaking', 2, 2022);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `grades`
+--
+
+CREATE TABLE `grades` (
+  `id` int(11) NOT NULL,
+  `crn` int(11) NOT NULL,
+  `RIN` int(9) NOT NULL,
+  `grade` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- RELATIONSHIPS FOR TABLE `grades`:
+--   `RIN`
+--       `students` -> `RIN`
+--   `crn`
+--       `courses` -> `crn`
+--
+
+--
+-- Dumping data for table `grades`
+--
+
+INSERT INTO `grades` (`id`, `crn`, `RIN`, `grade`) VALUES
+(1, 63861, 246813579, 87),
+(2, 60373, 135792468, 72),
+(3, 62827, 123456789, 85),
+(4, 63670, 987654321, 91),
+(5, 62827, 123456789, 93),
+(6, 60373, 123456789, 67),
+(7, 62827, 135792468, 89),
+(8, 63670, 246813579, 97),
+(9, 62827, 987654321, 79),
+(10, 63670, 135792468, 84);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE `students` (
+  `RIN` int(9) NOT NULL,
+  `RSCID` char(7) NOT NULL,
+  `first name` varchar(100) NOT NULL,
+  `last name` varchar(100) NOT NULL,
+  `alias` varchar(100) NOT NULL,
+  `phone` int(10) NOT NULL,
+  `street` varchar(50) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `zip` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- RELATIONSHIPS FOR TABLE `students`:
+--
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`RIN`, `RSCID`, `first name`, `last name`, `alias`, `phone`, `street`, `city`, `state`, `zip`) VALUES
+(0, '', '', '', '', 0, '', '', '', 0),
+(123456789, 'ditomd', 'Danielle', 'DiTomasso', 'Dani', 1234567890, 'Burdett Ave', 'Troy', 'NY', 12180),
+(135792468, 'johnd', 'John ', 'Doe', 'John', 1114445555, 'Congress Rd', 'Troy', 'NY', 12180),
+(246813579, 'alexr', 'Alex', 'Ray', 'Alex', 1116667777, 'Forest Dr', 'Troy', 'NY', 12180),
+(987654321, 'joes', 'Joe', 'Smith', 'Joe', 1112223333, 'Rainbow Dr', 'Troy', 'NY', 12180);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`crn`);
+
+--
+-- Indexes for table `grades`
+--
+ALTER TABLE `grades`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `crn` (`crn`) USING BTREE,
+  ADD KEY `RIN` (`RIN`) USING BTREE;
+
+--
+-- Indexes for table `students`
+--
+ALTER TABLE `students`
+  ADD PRIMARY KEY (`RIN`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `grades`
+--
+ALTER TABLE `grades`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `grades`
+--
+ALTER TABLE `grades`
+  ADD CONSTRAINT `RIN_foreign_key` FOREIGN KEY (`RIN`) REFERENCES `students` (`RIN`),
+  ADD CONSTRAINT `crn_foreign_key` FOREIGN KEY (`crn`) REFERENCES `courses` (`crn`);
+COMMIT;
