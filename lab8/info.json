@@ -1,0 +1,117 @@
+{
+	"Websys_course": [{
+		"Lectures": {
+			"Lecture 1": {
+				"title": "The Basics",
+				"description": "Server Information and Setting up the AMP stacks.",
+				"link": "https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing"
+			},
+			"Lecture 2": {
+				"title": "Git Learn Lecture and Apache",
+				"description": "History of Git and using good Github practices, and learning about the Apache Server.",
+				"link": "https://docs.google.com/presentation/d/1ha7ZyL1FMxKoo43iFNoMByP00z7l9nTH7UMWcmH-4Tg/edit?usp=sharing",
+                "link2": "https://docs.google.com/presentation/d/1yqESGRC_v59VDIAUw1u3IsKPFFrqjrxQdD04I6cw6W0/edit?usp=sharing"
+			},
+            "Lecture 3": {
+				"title": "HTML5 and Markup Languages",
+				"description": "The history of Markup Languages and basic introductions on how to use SGML, XML, HTML & XHTML while coding.",
+				"link": "https://docs.google.com/presentation/d/1Mib4YI837526U_VMoOE6M9tBFY2DxWO6581VZuYzrEo/edit?usp=sharing",
+                "link2": "https://drive.google.com/file/d/1YgLfeYeVHrgy5aMfFFw5Z1cNENaHkpyV/view?usp=sharing"
+			},
+            "Lecture 4": {
+				"title": "Cascading Style Sheet (CSS)",
+				"description": "An overview on what CSS is and the basics about how CSS works.",
+				"link": "https://docs.google.com/presentation/d/1usbhG9skLKmKpiMtA7udt36f2mzbscXT/edit?usp=sharing&ouid=108306413214416319104&rtpof=true&sd=true",
+                "link2": "https://docs.google.com/presentation/d/1Q5Ppt1l1BWllExUzAcfU7c03kAFmlT02-KKSouGZw7I/edit?usp=sharing"
+			},
+            "Lecture 5": {
+				"title": "Advanced CSS",
+				"description": "A more advanced look into CSS and how to best utilize it with HTML.",
+				"link": "https://docs.google.com/presentation/d/1Vp_-_fqCBtwhlgT3HhqMbXx-7Piv7OPiQvblxyznPZE/edit?usp=sharing"
+			},
+            "Lecture 6": {
+				"title": "JavaScript (JS)",
+				"description": "A introduction to JavaScript and the best practices for utilizing it.",
+				"link": "https://docs.google.com/presentation/d/108yq32gLsn9Dn6_pjdpku9YagWjpaDuVY86BHfCB1KM/edit?usp=sharing"
+			},
+            "Lecture 7": {
+				"title": "AJAX and JSON",
+				"description": "A introduction to both AJAX and JSON, the similartites and differences between them, and the best practices for utilizing them.",
+				"link": "https://docs.google.com/presentation/d/1CuKTZPsaJQs1DRgKbKHlObP_rTXv0HtAhm_wLFpEYfM/edit?usp=sharing"
+			},
+            "Lecture 8": {
+				"title": "jQuery",
+				"description": "A introduction what is jQuery, and how to add it into existing (or new) code.",
+				"link": "https://docs.google.com/presentation/d/1TOpBmwdZF1cUNfzcZ8t2DT237vvm5yFnqqi9mUzNBYw/edit?usp=sharing"
+			},
+			"Lecture 9": {
+				"title": "Front End Optimization/UX",
+				"description": "The best Front End Optimizations to include, and how to check the efficiency of an application.",
+				"link": "https://docs.google.com/presentation/d/1xnWSdl3QlAJhhYZJB-L9qulDC2VGb67Ye5jGF5A0NTk/edit?usp=sharing"
+			},
+			"Lecture 10": {
+				"title": "PHP",
+				"description": "Introduction to PHP and how to use classes and functions in PHP.",
+				"link": "https://docs.google.com/presentation/d/1FQrs6bCzF6lyfCXYm--leU81zl9uMwLz/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true",
+				"link2": "https://docs.google.com/presentation/d/1l-idKFz6MG4l057y9kiz_aSMUcEIwJRnZvi88UBUB98/edit?usp=sharing"
+			},
+			"Lecture 11": {
+				"title": "MySQL",
+				"description": "Introduction to MySQL and how to create / edit databases in phpmyadmin.",
+				"link": "https://docs.google.com/presentation/d/1b9FUdOQxXLWUB_tNlShdqN695tt8nwMh/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"Lecture 12": {
+				"title": "PHP and MySQL",
+				"description": "Introduction to combining PHP and MySQL in order to edit and call information from databases.",
+				"link": "https://docs.google.com/presentation/d/1hdchGQdRVq_vmLc4Ot1TbyDADWahZ15f/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			},
+			"Lecture 13": {
+				"title": "PHP and MySQL Part 2",
+				"description": "More advanced look into combining PHP and MySQL in order to edit and call information from databases, and how to incorporate effective authentication and authorization practices.",
+				"link": "https://docs.google.com/presentation/d/1IVV09GiwEho8KN4j3XFa9oVdIkz1t9LW/edit?usp=sharing&amp;ouid=101431771635793895949&amp;rtpof=true&amp;sd=true"
+			}
+		},
+		"Labs": {
+			"Lab 1": {
+				"title": "Portfolio Wesbite",
+				"description": "A group lab in which an application was created to showcase a portfolio for each group member.",
+				"link": "https://docs.google.com/document/d/1gfBFgyWVZ4HrudNXn4h_TCicEtdywLBdQxfIEZl-U98/edit?usp=sharing"
+			},
+			"Lab 2": {
+				"title": "Constitution Day",
+				"description": "A group lab in which an application was created to showcase annotations of the US Constitution.",
+				"link": "https://docs.google.com/document/d/1oOEMKBc2Dq6C69Y_pkXRipkVYB5-b-UskvswnTOiNV0/edit?usp=sharing"
+			},
+            "Lab 3": {
+				"title": "ITWS Website",
+				"description": "An individual lab in which a new website is created for the ITWS program here at RPI.",
+				"link": "https://docs.google.com/document/d/1TAqC_JIZ70o3bf87aCTPtFJxXB4k-VSQzesWzNDsMJI/edit?usp=sharing"
+			},
+            "Lab 4": {
+				"title": "GNH Website",
+				"description": "A group lab in which a new site is built for Gamma Nu Eta, the ITWS Honor Society.",
+				"link": "https://docs.google.com/document/d/1VBy44Ts1Zly14JJPiFk1LeQnqEVVVHxbZQJzgRjrVfo/edit?usp=sharing"
+			},
+            "Lab 5": {
+				"title": "Frontend Optimization",
+				"description": "An individual lab in which the game 'Free Bee' is edited to make a faster and much more efficent site.",
+				"link": "https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit?usp=sharing"
+			},
+            "Lab 6": {
+				"title": "A Better Calculator",
+				"description": "An individual lab in which the PHP code provided is improved and added onto to make a imporved version of the calculator.",
+				"link": "https://docs.google.com/document/d/1Aur3WmROp_lYT6UIIs1HjlZrc450VoORUXVzrXajZ8c/edit?usp=sharing"
+			},
+            "Lab 7": {
+				"title": "MySQL",
+				"description": "An  individual lab in which multiple tables are created and synamically edited within phpmyadmin.",
+				"link": "https://docs.google.com/document/d/1ILpyD9LtNgXQ_g8-9bNV9DOgjZkL25Nup69x2wX0dHg/edit?usp=sharing"
+			},
+            "Lab 8": {
+				"title": "Course Information",
+				"description": "An individual lab in which all of the concepts of this course is combined into one assigment.",
+				"link": "https://docs.google.com/document/d/1SIF9NwMwpI3HgYLhjoM0kAUpI5Pwp2-QefjjfE3FxBo/edit?usp=sharing"
+			}
+		}
+	}]
+}
